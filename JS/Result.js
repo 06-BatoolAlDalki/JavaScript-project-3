@@ -1,12 +1,17 @@
 let result = localStorage.getItem("result");
 var loggeduser = localStorage.getItem("loggeduser");
-let imitateCounter = Number(localStorage.getItem("ImitateCounter" + loggeduser));
-let adaptCounter = Number(localStorage.getItem("adaptCounter" + loggeduser));
-let trasnposeCounter = Number(localStorage.getItem("trasnposeCounter" + loggeduser));
+let imitateCounter = Number(localStorage.getItem("counterlevel1"));
+console.log(imitateCounter);
+let adaptCounter = Number(localStorage.getItem("counterLevel2"));
+console.log(adaptCounter);
+let trasnposeCounter = Number(localStorage.getItem("trasnposeCounter"));
+console.log(trasnposeCounter
+)
 var totalcorrect = imitateCounter + adaptCounter + trasnposeCounter;
 var totalwrong = 20 - totalcorrect;
+console.log(totalwrong);
 
-
+console.log(totalcorrect);
 
 if (result < 50) {
      document.getElementsByClassName("mainContainer")[0].style.backgroundColor = "#FC7676";

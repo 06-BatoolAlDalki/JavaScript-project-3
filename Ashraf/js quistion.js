@@ -1,4 +1,4 @@
-
+// localStorage.clear();
 var text1;
 var selected;
 var result = Number(localStorage.getItem("result"));
@@ -224,7 +224,7 @@ next.addEventListener("click", () => {
             document.getElementById("finish").style.display = "block";
             document.getElementById("next").style.display = "none";
         }
-        localStorage.setItem("Answer" + (id+10), text1);
+        localStorage.setItem("your choice" + (id + 10), text1);
         //  console.log(localStorage.getItem("Answer"+id));
         if (selected == "true") { result = result + 5; trasnposeCounter = trasnposeCounter + 1; } console.log(result); console.log(trasnposeCounter);
         console.log(selected);
@@ -253,11 +253,11 @@ finish.addEventListener("click", () => {
     localStorage.setItem("result", result);
     console.log(localStorage.getItem("loggeduser"));
     var loggeduser = localStorage.getItem("loggeduser");
-    localStorage.setItem("Answer" + (id+10), text1);
+    localStorage.setItem("your choice" + (id + 10), text1);
     localStorage.setItem("result" + loggeduser, result);
-    localStorage.setItem("trasnposeCounter"+loggeduser,trasnposeCounter);
-    localStorage.setItem("adaptCounter"+loggeduser,localStorage.getItem("adaptCounter"));
-    localStorage.setItem("ImitateCounter"+loggeduser,localStorage.getItem("ImitateCounter"));
+    localStorage.setItem("trasnposeCounter" + loggeduser, trasnposeCounter);
+    localStorage.setItem("adaptCounter" + loggeduser, localStorage.getItem("adaptCounter"));
+    localStorage.setItem("ImitateCounter" + loggeduser, localStorage.getItem("ImitateCounter"));
 
 
     location.href = "../Result.html"

@@ -7,8 +7,8 @@ var arr=["scientifically","Before","I was at the museum with Nouran.","done","I 
 var i=0;
 for (i;i<20;i++)
 {
-   document.getElementsByClassName("yourAnswer")[i].innerHTML+=" "+localStorage.getItem("Answer"+i);
-    if(localStorage.getItem("Answer"+i)!=arr[i]){
+   document.getElementsByClassName("yourAnswer")[i].innerHTML+=" "+localStorage.getItem("your choice"+i);
+    if(localStorage.getItem("your choice"+i)!=arr[i]){
     document.getElementsByClassName("yourAnswer")[i].style.backgroundColor="#FFD2D3";
 }
 else{

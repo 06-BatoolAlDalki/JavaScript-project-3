@@ -1,16 +1,3 @@
-var y = sessionStorage.getItem("username");
+var username = document.getElementById("username").value;
 
-console.log(y);
-
-document.getElementById("username").innerHTML = y;
-
-
-
-function logout() {
-
-    
-   
-    sessionStorage.clear();
-    location.href = "../Batool/project3.html";
-
-}
+document.getElementById("username").innerHTML = localStorage.getItem("username");
